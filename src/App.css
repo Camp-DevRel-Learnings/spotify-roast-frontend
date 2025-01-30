@@ -1,0 +1,155 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #18181b; /* Tailwind's bg-zinc-950 */
+  color: #e4e4e7; /* Tailwind's text-neutral-200 */
+  line-height: 1.5;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #18181b;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.spotify-button {
+  background-color: #22c55e; /* Tailwind's green-500 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.spotify-button:hover {
+  background-color: #16a34a; /* Tailwind's green-600 */
+}
+
+/* Main Section Styling */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #a1a1aa; /* Tailwind's text-neutral-400 */
+}
+
+.roast {
+  font-size: 1.25rem;
+  color: #c8cdc9; /* Tailwind's green-600 */
+  padding: 2rem 10rem; /* Adds padding: top/bottom 0.5rem, left/right 1rem */
+  border: 2px solid #18181b; /* Solid green border */
+  border-radius: 10px; /* Adds rounded corners */
+  background-color: #262728; /* Light background for contrast */
+  display: inline-block;
+}
+
+.main-button {
+  margin-top: 1.5rem;
+}
+
+.description {
+  margin-top: 1rem;
+  color: #a1a1aa;
+}
+
+/* Features Section Styling */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: #18181b;
+}
+
+@media (min-width: 768px) {
+  .features {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.feature-column {
+  max-width: 400px;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #22c55e;
+}
+
+.feature-list {
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.feature-item {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.feature-item::before {
+  content: "★";
+  color: #22c55e;
+  margin-right: 0.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Align the logo and text vertically */
+  gap: 0.5rem; /* Add spacing between the logo and text */
+}
+
+.logo-image {
+  height: 1em; /* Match the height of the text */
+  width: auto; /* Maintain the aspect ratio of the logo */
+}
+
+.logo-buff {
+  height: 300px; /* Match the height of the text */
+  width: auto; /* Maintain the aspect ratio of the logo */
+}
+
